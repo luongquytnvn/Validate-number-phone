@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate number phone</title>
+</head>
+<body>
+<script>
+    function validateNumberPhone(str) {
+        regEXP = /^\([0-9]{2}\)-\([0]{1}[0-9]{9}\)$/;
+        return regEXP.test(str);
+    }
+    let a = '(84)-(0978489648)';
+    console.log(validateNumberPhone(a));
+    let b = '(a8)-(22222222)';
+    console.log(validateNumberPhone(b));
+</script>
+</body>
+</html>
